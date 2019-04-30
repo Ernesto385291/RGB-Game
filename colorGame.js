@@ -9,6 +9,7 @@ var reset = document.getElementById("reset");
 var easyBtn = document.querySelector("#easyBtn");
 var hardBtn = document.querySelector("#hardBtn");
 
+console.log('HOLA TOM Y VALERIA')
 
 easyBtn.addEventListener("click", function(){
 	hardBtn.classList.remove("selected");
