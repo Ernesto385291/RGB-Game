@@ -4,6 +4,7 @@ body {
   font-family: "Monserrat", "Avenir";
 }
 .discuss{
+  margin-top: 10% !important;
   margin-right: 10% !important;
   margin-left: 10% !important;
 }
