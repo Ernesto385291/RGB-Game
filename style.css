@@ -4,8 +4,8 @@ body {
   font-family: "Monserrat", "Avenir";
 }
 .discuss{
-  margin-right:100px;
-  margin-left:100px;
+  margin-right: 10% !important;
+  margin-left: 10% !important;
 }
 h1 {
   color: white;
