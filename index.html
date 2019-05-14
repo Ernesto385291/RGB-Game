@@ -1,55 +1,83 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<title>Color Game</title>
-		<link rel="stylesheet" type="text/css" href="bootstrap.css">
-		<link rel="stylesheet" type="text/css" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Color Game</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <h1 class="title">
+      The great<br />
+      <span id="colorDisplay"> </span> <br />color game
+    </h1>
+    <div id="linea">
+      <div class="buttons">
+        <button id="reset">New colors</button>
+        <span id="message"></span>
+        <button id="easyBtn">Easy</button>
+        <button id="hardBtn" class="selected">Normal</button>
+      </div>
+    </div>
+    <div id="container">
+      <div class="square col-lg-4 col-md-6 col-sm-6 col-xs-12"></div>
+      <div class="square col-lg-4 col-md-6 col-sm-6 col-xs-12"></div>
+      <div class="square col-lg-4 col-md-6 col-sm-6 col-xs-12"></div>
+      <div class="square col-lg-4 col-md-6 col-sm-6 col-xs-12"></div>
+      <div class="square col-lg-4 col-md-6 col-sm-6 col-xs-12"></div>
+      <div class="square col-lg-4 col-md-6 col-sm-6 col-xs-12"></div>
+    </div>
 
-	</head>
-	<body>
-		<h1 class="title">The great<br> <span id="colorDisplay"> </span> <br>color
-			game</h1>
-		<div id="linea">
-			<button id="reset">New colors</button>
-			<span id="message"></span>
-			<button id="easyBtn">Easy</button>
-			<button id="hardBtn" class="selected">Normal</button>
-		</div>
-		<div id="container">
-			<div class="square col-lg-4 col-md-6 col-sm-6 col-xs-12"></div>
-			<div class="square col-lg-4 col-md-6 col-sm-6 col-xs-12"></div>
-			<div class="square col-lg-4 col-md-6 col-sm-6 col-xs-12"></div>
-			<div class="square col-lg-4 col-md-6 col-sm-6 col-xs-12"></div>
-			<div class="square col-lg-4 col-md-6 col-sm-6 col-xs-12"></div>
-			<div class="square col-lg-4 col-md-6 col-sm-6 col-xs-12"></div>
-		</div>
-		<div class="discuss">
-			<div id="disqus_thread"></div>
-			<script>
-		
-		/**
-		*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-		*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-		/*
+    <div id="comments">
+      <div id="disqus_thread"></div>
+      <script>
+        /**
+         *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+         *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+        /*
 		var disqus_config = function () {
 		this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
 		this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 		};
 		*/
-		(function() { // DON'T EDIT BELOW THIS LINE
-		var d = document, s = d.createElement('script');
-		s.src = 'https://color-game.disqus.com/embed.js';
-		s.setAttribute('data-timestamp', +new Date());
-		(d.head || d.body).appendChild(s);
-		})();
-		</script>
-			<noscript>Please enable JavaScript to view the <a
-					href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-		</div>
-		<script type="text/javascript" src="colorGame.js"></script>
-
-	</body>
+        (function() {
+          // DON'T EDIT BELOW THIS LINE
+          var d = document,
+            s = d.createElement("script");
+          s.src = "https://color-game.disqus.com/embed.js";
+          s.setAttribute("data-timestamp", +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+      <noscript
+        >Please enable JavaScript to view the
+        <a href="https://disqus.com/?ref_noscript"
+          >comments powered by Disqus.</a
+        ></noscript
+      >
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="colorGame.js"></script>
+  </body>
 </html>
