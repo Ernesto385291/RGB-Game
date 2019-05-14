@@ -3,6 +3,11 @@ body {
   margin: 0;
   font-family: "Monserrat", "Avenir";
 }
+.discuss{
+  margin-top: 10% !important;
+  margin-right: 10% !important;
+  margin-left: 10% !important;
+}
 h1 {
   color: white;
   text-align: center;
