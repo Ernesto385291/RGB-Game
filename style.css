@@ -3,11 +3,6 @@ body {
   margin: 0;
   font-family: "Monserrat", "Avenir";
 }
-.discuss{
-  margin-top: 10% !important;
-  margin-right: 10% !important;
-  margin-left: 10% !important;
-}
 h1 {
   color: white;
   text-align: center;
@@ -61,21 +56,29 @@ button:hover {
 }
 #linea {
   background-color: white;
-  height: 30px;
+  height: 27px;
   text-align: center;
 }
-
-@media (max-width: 425px) {
+@media (max-width: 650px) {
   .title {
-    font-size: 20px;
+    font-size: x-large;
+  }
+  .buttons {
+    font-size: 12px;
+  }
+  #linea {
+    height: 21px;
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 295px) {
   .title {
-    font-size: 15px;
+    font-size: medium;
   }
-  button {
-    font-size: 12px;
+  .buttons {
+    font-size: 10px;
+  }
+  #linea {
+    height: 18px;
   }
 }
